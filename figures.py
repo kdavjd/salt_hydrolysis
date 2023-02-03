@@ -883,6 +883,5 @@ class Plot():
                 +f'={str(*np.round(B,2))}',
                 fontdict={'size':12}, transform=ax.transAxes,
                 bbox=dict(facecolor='white', edgecolor='black'))
-
-        plt.show()
+        
         return fig

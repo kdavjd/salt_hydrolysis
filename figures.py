@@ -209,8 +209,7 @@ class Plot():
         ax6.set_xlabel(r'$ t,°C $')
         ax6.set_ylabel('$ C_{TiCl_{4}} \: на \: \omega TiO_{2},% $', fontdict={'size':12})
         ax6.set_title('Средний размер агрегатов\nот температуры и концентрации', fontdict={'size':12})
-        ax6.tick_params(axis='both', which='major', labelsize=12)
-        plt.show()
+        ax6.tick_params(axis='both', which='major', labelsize=12)        
         
         return fig
     
@@ -530,9 +529,7 @@ class Plot():
         ax.plot(x_,model_f(x_,A,B)[2])
         ax.set_ylabel("Выход", fontdict={'fontsize':12})
         ax.set_xlabel(r'$ Относительная~температура,°C $', fontdict={'fontsize':12})
-        ax.tick_params(axis='both', which='major', labelsize=10)
-
-        plt.show()
+        ax.tick_params(axis='both', which='major', labelsize=10)        
         df[ratio_filter & concentration_filter].sort_values(by='температура')
         
         return fig

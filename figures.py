@@ -454,7 +454,7 @@ class Plot():
         return fig    
     
     def figure_10(df):
-        
+                
         def exp_f(x, a, b, c):
             return a * np.exp(b * x) + c
     
